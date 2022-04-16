@@ -1,0 +1,60 @@
+{%extends "layout.html"%}
+{%block body%}
+      <!--  ************************* Page Title Starts Here ************************** -->
+      <div class="page-nav no-margin row">
+        <div class="container">
+            <div class="row">
+                <h2>Sanjivani Hospital</h2>
+                <ul>
+                    <li> <a href="/"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/about_us"><i class="fas fa-angle-double-right"></i> About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- ######## Page  Title End ####### -->
+<!-- ######################## Chatbot Starts Here ###################### -->
+<link rel="stylesheet" href="{{url_for('static',filename='css/chatbot.css')}}">
+<section class="key-features kf-2" style="background-color:lightblue">
+    <div class="container">
+        <div class="inner-title">
+
+            <h1 style="text-align: center;">Chatbot Consultent</h1>
+            <p>Consult with our bot to get common information.</p>
+        </div>
+
+<div class="container bag"> 
+    <div><img src="{{url_for('static',filename='images/background2.jpg')}} "style="opacity: 1;" alt="">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                <!-- <img  src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image"> -->
+                <img class="animated-gif" src="{{ url_for('static', filename='images/robot4.png')}}" alt="chatbot-icon">
+                </div>
+                <div class="chatbox__content--header">
+                    <h2 class="chatbox__heading--header">Chat support</h2>
+                    <p class="chatbox__description--header">Hi..My name is Stark.</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="static/images/chatbox-icon.svg" alt=""></button>
+            <!-- <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg')}}" /></button> -->
+        </div>
+    </div>
+</div>
+</div> 
+</div>
+</div>
+<!-- <script src="static/js/app.js"></script> -->
+<script src="{{url_for('static',filename='js/app.js')}}"></script>
+</section>
+{%endblock%}

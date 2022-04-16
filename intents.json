@@ -1,0 +1,180 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi","hi","Hii",
+        "Hey","hi there","",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting","Hello how are you feeling today?",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","by","byy"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag":"talk","patterns":["Hi, How is it going?","How do you do?","Nice to meet you."],"response":["The app is working great! How are you feeling today?","Thank you. How can i assist you? How are you feeling today?","I'm doing well. How are you feeling today?"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","thnx"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "health",
+      "patterns": [
+        "I feel sick","I have weakness in my body.","I am feeling weak","i am sick","i am not well","i am not feeling well"
+      ],
+      "responses": ["Okay. Can you tell me what's wrong? What are your symptoms?"
+      ]
+    },
+    {
+      "tag": "Fine",
+      "patterns": [
+        " i am feeling fine","i feel fine","i feel great","fine",
+        " i feel awesome","i feel good","i am feeling good"
+      ],
+      "responses": [
+        "good to know. how may i assist you then?"
+      ]
+    },
+    {
+      "tag": "interest",
+      "patterns": ["What are your interests"],
+      "responses":[" I am interested in helping you medically!"]
+    },
+
+      {"tag": "number","patterns": [ "What is your number"],"responses":["You can contact the helpline at +91 99999 11111"]},
+      {"tag": "location","patterns": [" What is your location"],"responses":["I am offline. So I am present at the same location as you."]},
+      {"tag": "where","patterns": ["Where are you from"],"responses":["We are located at Udaipur Geetanjali Institute of Technical Studies as of now."]},
+      {"tag": "father","patterns": [" Who is your father"],"responses":["Sanjivani healthcare team created me."]},
+      {"tag": "mother","patterns": ["Who is your mother"],"responses":["Sanjivani healthcare team created me."]},
+      {"tag": "age","patterns": [" What is your age"],"responses":["I was created in March 2022."]},
+      {"tag": "name","patterns": [" What is your name"],"responses":["My Name is Stark."]},
+      
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {"tag":"cold",
+    "patterns":["My nose is choked."],
+    "responses":["Okay, this is a symptom of cold, do you have cold?"]
+    },
+    {"tag":"cold madicine",
+      "patterns":["i have cold","i have a cold","cold"],
+      "responses":["You should take a sudafed tablet after your meal.It helps you in cold."]
+      },
+    {
+      "tag":"cold madicine confirm",
+      "patterns":[" Ok, i will take the sudafed tablet.", "I took the sudafed tablet.","yes i took"],
+      "responses":["let me know if you are feeling better after having sudafed tablet.I took the sudafed tablet.","Good, now take some rest and then let me know if you are feeling better after having sudafed tablet."]
+    },
+    {
+      "tag":"cold consult",
+      "patterns":["No, i am still not felling better after having sudafed tablet.","i am not feeling good","no i am not feeling better"],
+      "responses":"Ok, its not just a normal cold, you should consult a doctor."
+    },
+    {
+      "tag":"cough madicine",
+      "patterns":["My throat is itching.","i have cough","i have cough","cough"],
+      "responses":["You should take a spoon full of benadryl after your meal.It helps you in cough."]
+    },
+    {
+      "tag":"cough madicine dose",
+      "patterns":["Ok, i will take the benadryl.","I took the dose of benadryl.","yes i took benadryl"],
+      "responses":["let me know if you are feeling better after having benadryl.","Good, now take some rest and then let me know if you are feeling better after having benadryl."]
+    },
+    {
+      "tag":"cold feel",
+      "patterns":["No, i am still not felling better after having benadryl."],
+      "responses":[" Ok, its not just a normal cough, you should consult a doctor."]
+    },
+    {
+      "tag":"fever",
+      "patterns":["My body temperature has raised.","i have fever","i am suffering from fever"],
+      "responses":["you should take a tablet of crocin after you have your meal.It helps you in fever."]
+    },
+    {
+      "tag":"fever madicine",
+      "patterns":["Ok, i will take the crocin.","I took crocin.","i took crocin","yes i took crocin","ok","okay"],
+      "responses":["let me know if you are feeling better after having crocin.","Good, now take some rest and then let me know if you are feeling better after having crocin."]
+    },
+    {
+      "tag":"fever feel",
+      "patterns":["No, i am still not felling better after having crocin.","no i am not feeling well after having crocin","not feel good after taking crocine"],
+      "responses":["Ok, its not just a normal fever, you should consult a doctor."]
+    },
+    {
+      "tag":"shivering",
+      "patterns":["I am shivering"],
+      "responses":["This is a symptom of fever, you should take a tablet of crocin after you have your meal.It helps you in fever."]
+    },
+    {
+      "tag":"fracture",
+      "patterns":["my leg is paining."," my joint is paining.","my hand is paining.","my hand is aching.","my leg is aching."," my joint is aching."],
+      "responses":["okay, did you get hurt, or it is a suddern aching."]
+    },
+    {
+      "tag":"fracture type",
+      "patterns":["yes i got hurt.","it is a mild ache.","i think it is fracture"],
+      "responses":["ok, is there a swelling or a physical deformity or bleeding at the aching region."]
+    },
+    {
+      "tag":"Fracture Go",
+      "patterns":["yes there is a swelling","yes there is a physical deformity.","yes it is bleeding."],
+      "responses":["okay, it is a common symptom of fracture, You should go to Hospital."]
+    },
+    {
+      "tag":"Headche",
+      "patterns":["i have a headache","i have headache","headache"],
+      "responses":["what kind of headache do you have : 1. Migrane headache - intense throbbing pain on just one side of the head. 2. Cluster headaches - severe and recurrent headaches 3. Tension Headache - Ocassional"]
+    },
+    {
+      "tag":"Migrane Headche",
+      "patterns":["i have a migrane headache","migrane","1"],
+      "responses":["symptom noted. Migraines tend to be recurrent, and each attack may last up to 3 days. You need to talk to a doctor?"]
+    },
+    {
+      "tag":"Cluster Headche",
+      "patterns":["i have a cluster headache","cluster","2"],
+      "responses":["symptom noted. Attacks tend to occur in daily clusters that can persist for weeks or months. They typically take place at the same time of day, which can often be a couple of hours after falling asleep at night. You need to talk to a doctor?"]
+    },
+    {
+      "tag":"Tension Headche",
+      "patterns":[ "i have a tension headache","tension","3"],
+      "responses":["symptom noted. The cause of tension headaches is unclear, but stress, anxiety, and depression are common triggers. You need to talk to a doctor?"]
+    },
+    {
+      "tag":"dizzy",
+      "patterns":["I am feeling dizzy"],
+      "responses":["This might be because you are tired, you should take some rest."]
+    },
+    {
+      "tag":"take care",
+      "patterns":["yes, i feel good","yes","yup","yess"],
+      "responses":["hope you get well soon,take care"]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{%extends "layout.html"%}
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    Required meta tags -->
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head> -->
+
+    <!-- <body> -->
+{%block body %}
+      <!--  ************************* Page Title Starts Here ************************** -->
+      <div class="page-nav no-margin row">
+        <div class="container">
+            <div class="row">
+                <h2>Sanjivani Hospital</h2>
+                <ul>
+                    <li> <a href="/"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/about_us"><i class="fas fa-angle-double-right"></i> About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- ######## Page  Title End ####### -->
+<div class="container" style="background-color:aquamarine">
+  <div class="row no-margin">
+    <!-- <div><img src="static/images/background3.jpg" style="opacity: 0.7;"alt=""></div> -->
+      <div class="col-sm-7">
+        <div class="content">
+            <h1>Book You Appointemnt Now and Save your time</h1>
+            <p>Hey have you booked your slot if not then hurry up!! </p>
+            <h2>For Help Call : 99999 11111</h2>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-data">
+          <div class="form-head">
+            <form action="/index2"method="GET">
+              <h2>Book Appointemnt</h2>
+          </div>
+        <div class="form-body">
+          <div class="row form-row">
+            <input type="text" name="full_name" placeholder="Enter Full name" class="form-control">
+          </div>
+        <div class="row form-row">
+          <input type="text" name="phone_num"placeholder="Enter Mobile Number" class="form-control">
+        </div>
+        <div class="row form-row">
+          <input type="text" name="email"placeholder="Enter Email Adreess" class="form-control">
+        </div>
+        <div class="row form-row">
+          <input id="dat" type="text"name="date" placeholder="Appointment Date" class="form-control">
+        </div>
+                            
+        <h6>Address Details</h6>
+
+        <div class="row form-row">
+          <div class="col-sm-6">
+            <input type="text" name="area"placeholder="Enter Area" class="form-control">
+          </div>
+        <div class="col-sm-6">
+          <input type="text" name="city"placeholder="Enter City" class="form-control">
+        </div>
+      </div>
+    <div class="row form-row">
+    <div class="col-sm-6">
+    <input type="text" name="state"placeholder="Enter State" class="form-control">
+    </div>
+    <div class="col-sm-6">
+    <input type="text" name="code"placeholder="Postal Code" class="form-control">
+    </div>
+    </div>
+
+    <div class="row form-row">
+      <button class="btn btn-success btn-appointment" type="submit">
+        Book Appointment
+      </button>
+                               
+    </div>
+                          
+  </div>
+</div>
+<br>
+</div>
+    </form>
+    </div>
+    </div>
+  </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/datepicker.css')}}">
+    <script src="{{url_for('static',filename='js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap-datepicker.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+
+    <script>
+      $(document).ready(function(){
+          $("#dat").datepicker();
+      })
+    </script>
+    
+ {% endblock %}
