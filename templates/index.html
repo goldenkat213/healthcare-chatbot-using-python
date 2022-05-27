@@ -1,83 +1,7 @@
-<!-- {% extends "layout.html" %}
-{% block body %} -->
-<!doctype html>
-<html lang="en">
+{% extends "layout.html" %}
+{% block body %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sanjivani</title>
-    <link rel="shortcut icon" href="{{url_for('static',filename='images/fav.jpg')}}"> 
-    
-    <!-- <link rel="shortcut icon" href="assets/images/fav.jpg"> -->
-    <!-- <script src="{{url_for('static',filename='js/script.js')}}"></script> -->
-    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/fontawsom-all.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
-    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/datepicker.css')}}"> -->
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
-    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
-    <script src="{{url_for('static',filename='js/jquery-3.2.1.min.js')}}"></script>
-       
-    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
-    <link rel="stylesheet" href="{{url_for('static',filename='css/style1.css')}}">
-    <script src="{{url_for('static',filename='plugins/scroll-fixed/jquery-scrolltofixed-min.js')}}"></script>
-    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/chatbot.css')}}"> -->
-    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
-    <!-- <script src="{{url_for('static',filename='js/app.js')}}"></script> -->
-</head>
-<body>
-
-    <!-- ################# Header Starts Here#######################--->
-    <header>
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12 left-item">
-                        <ul>
-                            <li><i class="fas fa-envelope-square"></i> Sanjivani.com</li>
-                            <li><i class="fas fa-phone-square"></i> +99999 11111</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 d-none d-lg-block right-item">
-                        <ul>
-                            <li><a><i class="fab fa-github"></i></a></li>
-                            <li><a><i class="fab fa-google-plus-g"></i></a></li>
-                            <li> <a><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a><i class="fab fa-twitter"></i></a></li>
-                            <li> <a><i class="fab fa-facebook-f"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div id="nav-head" class="header-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12 nav-img">
-                        <img src="{{url_for('static',filename='images/logo1.png')}}"alt="">
-                       <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
-                    </div>
-                    <div id="menu" class="col-md-9 d-none d-md-block nav-item">
-                        <ul>
-                            <li><a href="/" style="text-decoration: none;">Home</a></li>
-                            <li><a href="/about_us"style="text-decoration: none;">About Us</a></li>
-                            <li><a href="/services"style="text-decoration: none;">Services</a></li>
-                            <li><a href="/contact_us"style="text-decoration: none;">Contact Us</a></li>
-                            <li><a href="/chatbot"style="text-decoration: none;">Consult</a></li>
-                            <!-- <li><a href="/gallery">Gallery</a></li> -->
-                            <!-- <li><a href="/index2">Book an Appointment</a></li> -->
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </header>
-   
-<!-- ################# Slider Starts Here#######################--->
+<!-- ################# Slider Starts Here####################### -->
 
     <div class="slider-detail">
 
@@ -133,7 +57,7 @@
             </a>
         </div>
     </div>
-    <!-- ################# Key Features Starts Here#######################--->
+    <!-- ################# Key Features Starts Here####################### -->
     <section class="key-features">
         <div class="container">
             <div class="inner-title">
@@ -204,7 +128,7 @@
 
     </section>
 
-    <!-- ################# Doctors Message Starts Here#######################--->
+    <!-- ################# Doctors Message Starts Here####################### -->
    <div class="doctor-message">
         <div class="inner-lay">
             <div class="container">
@@ -228,7 +152,7 @@
         </div>
 
     </div>
-    <!-- ################# Our Team Starts Here#######################--->
+    <!-- ################# Our Team Starts Here####################### -->
     <section class="our-team">
         <div class="container">
             <div class="inner-title">
@@ -320,59 +244,4 @@
             </div>
         </div>
     </section>
- <!-- ################# Footer Starts Here#######################--->
- <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                <h2>About Us</h2>
-                <p>
-                    Sanjivani is a leading provider of information technology, consulting, and business process services. Our dedicated employees offer strategic insights, technological expertise and industry experience.
-                </p>
-                <p>We focus on technologies that promise to reduce costs, streamline processes and speed time-to-market, Backed by our strong quality processes and rich experience managing global... </p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <h2>Useful Links</h2>
-                <ul class="list-unstyled link-list">
-                    <li><a ui-sref="about" href="/about_us">About us</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="products" href="/services">Services</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="contact" href="/contact_us">Contact us</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="consult" href="/chatbot">Consult</a><i class="fa fa-angle-right"></i></li>
-                    <!-- <li><a ui-sref="gallery" href="/gallery">Gallery</a><i class="fa fa-angle-right"></i></li> -->
-                </ul>
-            </div>
-            <div class="col-md-4 col-sm-12 map-img">
-                <h2>Contact Us</h2>
-                <address class="md-margin-bottom-40">
-                    Sanjivani Hospital<br>
-                    Udaipur (Badgaon) <br>
-                    Rajasthan, IND <br>
-                    Phone: +91 99999 11111 <br>
-                    <!-- Email:<a href="mailto:sanjivani@gmail.com"></a><br> -->
-                    <!-- Web:<a href="/">www.Sanjivani.com</a> -->
-                </address>
-            </div>
-        </div>
-    </div>
-    
-</footer>
-<div class="copy">
-        <div class="container">
-            <a href="https://www.Sanjivani.com/">2022 &copy; All Rights Reserved | Designed and Developed by Sanjivani Team</a>
-            
-            <span>
-            <a><i class="fab fa-github"></i></a>
-            <a><i class="fab fa-google-plus-g"></i></a>
-            <a><i class="fab fa-pinterest-p"></i></a>
-            <a><i class="fab fa-twitter"></i></a>
-            <a><i class="fab fa-facebook-f"></i></a>
-    </span>
-        </div>
-
-    </div>
-
-</body>
-
-
-</html>    
-<!-- {% endblock %}  -->
+{% endblock %} 
